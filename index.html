@@ -13,28 +13,27 @@
     <audio id="btn-press-sound1" src="1a.wav"></audio>
     <audio id="btn-press-sound2" src="1b.mp3"></audio>
     <audio id="btn-press-sound3" src="1c.wav"></audio>
-    <div id="header">
-        <div id="nav-btn-container">
-            <button class="nav-btn active" onclick="openContent(event, 'Home')" 
-            onpointerover="document.getElementById('btn-press-sound').play();"
-            id="homeBtn">Home</button>
-            <button class="nav-btn" onclick="openContent(event, 'Exps')" 
-            onpointerover="document.getElementById('btn-press-sound').play();"
-            >Experience</button>
-            <button class="nav-btn" onclick="openContent(event, 'Skls')" 
-            onpointerover="document.getElementById('btn-press-sound').play();"
-            >Skills</button>
-            <button class="nav-btn" onclick="openContent(event, 'Edct')" 
-            onpointerover="document.getElementById('btn-press-sound').play();"
-            >Education</button>
-            <button class="nav-btn" onclick="openContent(event, 'Prjt')" 
-            onpointerover="document.getElementById('btn-press-sound').play();"
-            >Projects</button>
-        </div>
-    </div>
-    <div id="main">
-        
+    <div id="main">    
         <div id="content">
+            <div id="header">
+                <div id="nav-btn-container">
+                    <button class="nav-btn active" onclick="openContent(event, 'Home')" 
+                    onpointerover="document.getElementById('btn-press-sound').play();"
+                    id="homeBtn">Home</button>
+                    <button class="nav-btn" onclick="openContent(event, 'Exps')" 
+                    onpointerover="document.getElementById('btn-press-sound').play();"
+                    >Experience</button>
+                    <button class="nav-btn" onclick="openContent(event, 'Skls')" 
+                    onpointerover="document.getElementById('btn-press-sound').play();"
+                    >Skills</button>
+                    <button class="nav-btn" onclick="openContent(event, 'Edct')" 
+                    onpointerover="document.getElementById('btn-press-sound').play();"
+                    >Education</button>
+                    <button class="nav-btn" onclick="openContent(event, 'Prjt')" 
+                    onpointerover="document.getElementById('btn-press-sound').play();"
+                    >Projects</button>
+                </div>
+            </div>
             <div class="form content">
                 <center>
                     <div id="Home" class="nav-content">
@@ -47,10 +46,10 @@
 
                         </div>
                     </div>
-                    <div id="Exps" class="nav-content">
+                    <div id="Edct" class="nav-content">
                         <br>
                         <div id="heading">
-                            Experience
+                            Education
                         </div>
                         <br>
                     </div>
@@ -122,33 +121,59 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Edct" class="nav-content">
+                    <div id="Exps" class="nav-content">
                         <br>
                         <div id="heading">
-                            Education
+                            Experience
                         </div>
                         <br>
-                        <div class="form educations">
-                            <div class="form education" id="education1" onmouseenter="document.getElementById('btn-press-sound').play();">
+                        <div class="form experiences">
+                            <div class="form experience" id="education1" onmouseenter="document.getElementById('btn-press-sound').play();">
                                 <div class="itemimg"></div>
                                 <div class="iteminf">
                                     <div class="itembg">
                                         <div class="itemfg">
-                                            <div class="itemtext">
-                                                Educators
-                                            </div>
+                                            2016-21
+                                        </div>
+                                        <div class="itemtext">
+                                            Educators
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form education" id="education2" onmouseenter="document.getElementById('btn-press-sound').play();">
+                            <div class="form experience" id="education2" onmouseenter="document.getElementById('btn-press-sound').play();">
                                 <div class="itemimg"></div>
                                 <div class="iteminf">
                                     <div class="itembg">
                                         <div class="itemfg">
-                                            <div class="itemtext">
-                                                APS
-                                            </div>
+                                            2022-24
+                                        </div>
+                                        <div class="itemtext">
+                                            APS
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form experience" id="education1" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itembg">
+                                        <div class="itemfg">
+                                        </div>
+                                        <div class="itemtext">
+                                            Educators
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form experience" id="education2" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itembg">
+                                        <div class="itemfg">
+                                        </div>
+                                        <div class="itemtext">
+                                            APS
                                         </div>
                                     </div>
                                 </div>
@@ -166,9 +191,14 @@
             </div>
         </div>
         <div id="contact">
-                <div class="form contact">
-    
-                </div>
+            <div id="logoContainer">
+                <button class="nav-btn" id="logo" onclick="openContent(event, 'Home')" 
+                onpointerover="document.getElementById('btn-press-sound').play();"
+                ></button>
+            </div>
+            <div class="form contact">
+
+            </div>
         </div>
     </div>
 </body>
@@ -178,6 +208,79 @@
         margin: 0;
         font-family: 'Comfortaa';
     }
+
+    html{
+        background: url("mbg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #header{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: visible;
+    }
+    #main{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #contact{
+        width: 20%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        
+        display: block;
+        align-items: center;
+    }
+    #content{
+        width: 80%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        
+        display: block;
+        align-items: center;
+    }
+    #footer{
+        height: 7.5%;
+        position: relative;
+    }
+
+    #logoContainer{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logo{
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0px 0px 0px ;
+        filter: drop-shadow(0px 0px 10px rgba(10, 10, 30, 0.75));
+        height: 75%;
+        width: 50%;
+        background-image: url("logo.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: visible;
+
+        transition: height 0.5s, width 0.5s;
+    }
+    #logo:hover{
+        height: 90%;
+        width: 90%;
+    }
+
     #heading{
         border-radius: 15px;
         background-color: rgba(10, 10, 30, 0.75);
@@ -195,18 +298,21 @@
         align-items: center;
         justify-content: center;
 
-        transition: border-radius 0.5s;
+        transition: border-radius 0.5s, background-color 0.5s, color 0.5s;
     }
     #heading:hover{
+        background-color: rgba(255, 255, 255, 0.75);
+        color: black;
         border-radius: 10px;
     }
+
     #nav-btn-container{
-        margin: auto;
         height: 100%;
-        width: 60%;
+        width: 100%;
         display: flex;
         align-items: center;
     }
+
     .nav-btn{
         border-radius: 15px;
         background-color: rgba(10, 10, 30, 0.75);
@@ -214,7 +320,9 @@
         color: white;
         top: 50%;
         height: 40%;
-        width: 130px;
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
         border: none;
         font-family: 'Comfortaa';
         margin-left: 5px;
@@ -237,6 +345,7 @@
     .nav-btn.active:hover{
         border-radius: 15px;
     }
+
     .nav-content{
         display: none;
         animation: fadeEffect .5s;
@@ -245,6 +354,7 @@
         from {opacity: 0;}
         to {opacity: 1;}
     }
+
     .form{
         background-color: rgba(10, 10, 30, 0.75);
         box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
@@ -262,7 +372,19 @@
     .form:hover{
         border-radius: 20px;
     }
-    .form.content, .form.contact{
+
+    .form.content{
+        height: 85%;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .form.contact{
+        height: 85%;
+        width: auto;
+        
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .form.slideshow{
@@ -285,8 +407,289 @@
         100%  {background-image: url('ss4.jpg');}
     }
 
-    #Home, #Skls {
+    .form.skills{
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0); 
+        height: 85%;
+        width: 95%;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        overflow: scroll;
+    }
+   
+    .form.skill{
+        border-radius: 0px;
+        background-color: transparent;
+        height: 50%;
+        float: left;
+        width: 33%;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0);
+        backdrop-filter: blur(0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        overflow: visible;
+
+    }
+
+    .form.skill .itemimg{
+        top: 0%;
+        left: 0%;
+        height: 80%;
+        width: 80%;
+        margin: auto; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 10px rgba(10, 10, 30, 0.75));
+
+        transition: background-position .5s, height .5s, width .5s;
+    }
+    .form.skill:hover .itemimg{
+        background-position: left;
+        width: 35%;
+    }
+
+    #skill1 .itemimg{
+        background-image: url("unity.png");
+    }
+    #skill2 .itemimg{
+        background-image: url("html.png");
+    }
+    #skill3 .itemimg{
+        background-image: url("css.png");
+    }
+    #skill4 .itemimg{
+        background-image: url("js.png");
+    }
+    #skill5 .itemimg{
+        background-image: url("cs.png");
+    }
+
+    .form.skill .iteminf{
+        height: 0px;
+        width: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: width .5s, height .5s;
+    }
+    .form.skill:hover .iteminf{
+        height: 0px;
+        width: 50%;
+    }
+
+    .form.skill .itemlevel{
+        height: 0px;
+        width: 0px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        
+        transition: width .5s, height .5s, padding-bottom .5s, padding-top .5s, background-image 5s;
+    }
+    .form.skill:hover .itemlevel{
+        padding-top: 45%;
+        padding-bottom: 45%;
+        width: 90%;
+    }
+    
+    #skill1 .itemlevel{
+        background-image: conic-gradient(grey 0deg, #333 150deg, black 300deg, white 301deg, white 360deg);
+    }
+    #skill2 .itemlevel{
+        background-image: conic-gradient(orange 0deg, orangered 300deg, white 301deg, white 360deg);
+    }
+    #skill3 .itemlevel{
+        background-image: conic-gradient(cyan 0deg, blue 300deg, white 301deg, white 360deg);
+    }
+    #skill4 .itemlevel{
+        background-image: conic-gradient(yellow 0deg, orange 300deg, white 301deg, white 360deg);
+    }
+    #skill5 .itemlevel{
+        background-image: conic-gradient(violet 0deg, purple 150deg, indigo 300deg, white 301deg, white 360deg);
+    }
+
+    .form.skill .itemcover{
+        height: 0px;
+        width: 0px;
+        border-radius: 100px;
+        position: absolute;
+        background: rgba(245, 245, 245, 1);
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+
+        transition: width .5s, height .5s, padding-top .5s, padding-bottom .5s;
+    }
+    .form.skill:hover .itemcover{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        width: 40%;
+    }
+
+    #skill1 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: black;
+    }   
+    #skill2 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: orangered;
+    }  
+    #skill3 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: blue;
+    } 
+    #skill4 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: orange;
+    } 
+    #skill5 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: purple;
+    }
+
+    .form.skill .itemtext{
+        font-size: 0px;
+        text-align: center;
+
+        transition: font-size .5s;
+    }
+    .form.skill:hover .itemtext{
+        font-size: 24px;
+    }
+
+    .form.experiences{
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0); 
+        height: 85%;
+        width: 95%;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        overflow: scroll;
+    }
+
+    .form.experience{
+        border-radius: 0px;
+        background-color: transparent;
+        height: 50%;
+        float: left;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0);
+        backdrop-filter: blur(0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        overflow: visible;
+
+    }
+
+    .form.experience .itemimg{
+        top: 0%;
+        left: 0%;
+        height: 80%;
+        width: 80%;
+        margin: auto; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 10px rgba(10, 10, 30, 0.75));
+
+        transition: background-position .5s, height .5s, width .5s;
+    }
+    .form.experience:hover .itemimg{
+        background-position: left;
+        width: 10%;
+    }
+
+    #education1 .itemimg{
+        background-image: url("educators.png");
+    }
+    #education2 .itemimg{
+        background-image: url("aps.png");
+    }
+
+
+    .form.experience .iteminf{
+        height: 0px;
+        width: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: width .5s, height .5s;
+    }
+    .form.experience:hover .iteminf{
         height: 100%;
+        width: 90%;
+    }
+
+    .form.experience .itembg{
+        height: 0px;
+        width: 0px;
+        border-radius: 50px;
+        background: rgba(245, 245, 245, 1);
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        
+        transition: width .5s, height .5s, padding-bottom .5s, padding-top .5s, background-image 5s;
+    }
+    .form.experience:hover .itembg{
+        border-radius: 20px;
+        height: 90%;
+        width: 90%;
+    }
+
+    .form.experience .itemfg{
+        position: absolute;
+        
+        height: 0px;
+        width: 0px;
+        font-size: 0px;
+        border-radius: 15px;
+        background: rgba(245, 245, 245, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+
+        transition: width .5s, height .5s, padding-top .5s, padding-bottom .5s;
+    }
+    .form.experience:hover .itemfg{
+        top: 7%;
+        right: 5%;
+        font-size: 24px;
+        border-radius: 10px;
+        height: 10%;
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .form.experience .itemtext{
+        font-size: 0px;
+        text-align: center;
+
+        transition: font-size .5s;
+    }
+    .form.experience:hover .itemtext{
+        font-size: 24px;
     }
 
     ::-webkit-scrollbar{
@@ -317,227 +720,6 @@
 
     ::-webkit-scrollbar-corner{
         background-color: transparent;
-    }
-
-    .form.skills, .form.educations{
-        border-radius: 0px;
-        background-color: transparent;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0); 
-        height: 85%;
-        width: 95%;
-        display: block;
-        padding: 10px;
-        margin: 10px;
-        overflow: scroll;
-    }
-
-    .form.skill, .form.education{
-        border-radius: 0px;
-        background-color: transparent;
-        height: 50%;
-        float: left;
-        width: 33%;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0);
-        backdrop-filter: blur(0px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        overflow: visible;
-
-    }
-    
-    .itemimg{
-        top: 0%;
-        left: 0%;
-        height: 80%;
-        width: 80%;
-        margin: auto; 
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        filter: drop-shadow(0px 0px 10px rgba(10, 10, 30, 0.75));
-
-        transition: background-position .5s, height .5s, width .5s;
-    }
-
-    #skill1 .itemimg{
-        background-image: url("unity.png");
-    }
-
-    #skill2 .itemimg{
-        background-image: url("html.png");
-    }
-
-    #skill3 .itemimg{
-        background-image: url("css.png");
-    }
-
-    #skill4 .itemimg{
-        background-image: url("js.png");
-    }
-
-    #skill5 .itemimg{
-        background-image: url("cs.png");
-    }
-
-    #education1 .itemimg{
-        background-image: url("educators.png");
-    }
-
-    #education2 .itemimg{
-        background-image: url("aps.png");
-    }
-    
-    .form.skill:hover .itemimg{
-        background-position: left;
-        width: 35%;
-    }
-
-    .form.education:hover .itemimg{
-        background-position: left;
-        width: 35%;
-    }
-
-    .iteminf{
-        height: 0px;
-        width: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        transition: width .5s, height .5s;
-    }
-
-    .form.skill:hover .iteminf{
-        height: 0px;
-        width: 50%;
-    }
-
-    .itemlevel{
-        height: 0px;
-        width: 0px;
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
-        
-        transition: width .5s, height .5s, padding-bottom .5s, padding-top .5s, background-image 5s;
-    }
-    
-    .form.skill:hover .itemlevel{
-        padding-top: 45%;
-        padding-bottom: 45%;
-        width: 90%;
-    }
-    
-    #skill1 .itemlevel{
-        background-image: conic-gradient(grey 0deg, #333 150deg, black 300deg, white 301deg, white 360deg);
-    }
-    #skill2 .itemlevel{
-        background-image: conic-gradient(orange 0deg, orangered 300deg, white 301deg, white 360deg);
-    }
-    #skill3 .itemlevel{
-        background-image: conic-gradient(cyan 0deg, blue 300deg, white 301deg, white 360deg);
-    }
-    #skill4 .itemlevel{
-        background-image: conic-gradient(yellow 0deg, orange 300deg, white 301deg, white 360deg);
-    }
-    #skill5 .itemlevel{
-        background-image: conic-gradient(violet 0deg, purple 150deg, indigo 300deg, white 301deg, white 360deg);
-    }
-
-    .itemcover{
-        height: 0px;
-        width: 0px;
-        border-radius: 100px;
-        position: absolute;
-        background: rgba(245, 245, 245, 1);
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
-
-        transition: width .5s, height .5s, padding-top .5s, padding-bottom .5s;
-    }
-
-    #skill1 .itemcover{
-        background-color: rgba(255, 255, 255, 0.95);
-        color: black;
-    }
-    
-    #skill2 .itemcover{
-        background-color: rgba(255, 255, 255, 0.95);
-        color: orangered;
-    }
-    
-    #skill3 .itemcover{
-        background-color: rgba(255, 255, 255, 0.95);
-        color: blue;
-    }
-    
-    #skill4 .itemcover{
-        background-color: rgba(255, 255, 255, 0.95);
-        color: orange;
-    }
-    
-    #skill5 .itemcover{
-        background-color: rgba(255, 255, 255, 0.95);
-        color: purple;
-    }
-
-    .form.skill:hover .itemcover{
-        padding-top: 20%;
-        padding-bottom: 20%;
-        width: 40%;
-    }
-
-    .itemtext{
-        font-size: 0px;
-        text-align: center;
-
-        transition: font-size .5s;
-    }
-
-    .form.skill:hover .itemtext{
-        font-size: 24px;
-    }
-    
-    #header{
-        height: 10%;
-        position: relative;
-        overflow: hidden;
-    }
-    #main{
-        margin:auto;
-        position: relative;
-        height: 90%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    #contact{
-        width: 20%;
-        height: 100%;
-        background-color: transparent;
-        margin: auto;
-    }
-    #content{
-        width: 75%;
-        height: 100%;
-        background-color: transparent;
-        margin: auto;
-    }
-    #footer{
-        height: 7.5%;
-        position: relative;
-    }
-    html{
-        background: url("mbg.jpg");
-        background-size: cover;
-        background-position: center;
     }
 </style>
 <script>
