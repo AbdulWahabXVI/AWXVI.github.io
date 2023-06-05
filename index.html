@@ -1,0 +1,565 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="btn-press-sound" src="btn-press-sound.wav"></audio>
+    <audio id="btn-press-sound1" src="1a.wav"></audio>
+    <audio id="btn-press-sound2" src="1b.mp3"></audio>
+    <audio id="btn-press-sound3" src="1c.wav"></audio>
+    <div id="header">
+        <div id="nav-btn-container">
+            <button class="nav-btn active" onclick="openContent(event, 'Home')" 
+            onpointerover="document.getElementById('btn-press-sound').play();"
+            id="homeBtn">Home</button>
+            <button class="nav-btn" onclick="openContent(event, 'Exps')" 
+            onpointerover="document.getElementById('btn-press-sound').play();"
+            >Experience</button>
+            <button class="nav-btn" onclick="openContent(event, 'Skls')" 
+            onpointerover="document.getElementById('btn-press-sound').play();"
+            >Skills</button>
+            <button class="nav-btn" onclick="openContent(event, 'Edct')" 
+            onpointerover="document.getElementById('btn-press-sound').play();"
+            >Education</button>
+            <button class="nav-btn" onclick="openContent(event, 'Prjt')" 
+            onpointerover="document.getElementById('btn-press-sound').play();"
+            >Projects</button>
+        </div>
+    </div>
+    <div id="main">
+        
+        <div id="content">
+            <div class="form content">
+                <center>
+                    <div id="Home" class="nav-content">
+                        <br>
+                        <div id="heading">
+                            Home
+                        </div>
+                        <br>
+                        <div class="form slideshow">
+
+                        </div>
+                    </div>
+                    <div id="Exps" class="nav-content">
+                        <br>
+                        <div id="heading">
+                            Experience
+                        </div>
+                        <br>
+                    </div>
+                    <div id="Skls" class="nav-content">
+                        <br>
+                        <div id="heading">
+                            Skills
+                        </div>
+                        <div class="form skills">
+                            <div class="form skill" id="skill1" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itemlevel">
+                                        <div class="itemcover">
+                                            <div class="itemtext">
+                                                83%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form skill" id="skill2" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itemlevel">
+                                        <div class="itemcover">
+                                            <div class="itemtext">
+                                                83%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form skill" id="skill3" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itemlevel">
+                                        <div class="itemcover">
+                                            <div class="itemtext">
+                                                83%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form skill" id="skill4" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itemlevel">
+                                        <div class="itemcover">
+                                            <div class="itemtext">
+                                                83%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form skill" id="skill5" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itemlevel">
+                                        <div class="itemcover">
+                                            <div class="itemtext">
+                                                83%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Edct" class="nav-content">
+                        <br>
+                        <div id="heading">
+                            Education
+                        </div>
+                        <br>
+                        <div class="form educations">
+                            <div class="form education" id="education1" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itembg">
+                                        <div class="itemfg">
+                                            <div class="itemtext">
+                                                Educators
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form education" id="education2" onmouseenter="document.getElementById('btn-press-sound').play();">
+                                <div class="itemimg"></div>
+                                <div class="iteminf">
+                                    <div class="itembg">
+                                        <div class="itemfg">
+                                            <div class="itemtext">
+                                                APS
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                    <div id="Prjt" class="nav-content">
+                        <br>
+                        <div id="heading">
+                            No Projects Here...
+                        </div>
+                        <br>                       
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="contact">
+                <div class="form contact">
+    
+                </div>
+        </div>
+    </div>
+</body>
+<style>
+    body, html{
+        padding: 0;
+        margin: 0;
+        font-family: 'Comfortaa';
+    }
+    #heading{
+        border-radius: 15px;
+        background-color: rgba(10, 10, 30, 0.75);
+        box-shadow: 0px 0px 20px rgba(10, 10, 20, 1);
+        color: white;
+        height: 5%;
+        width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        font-family: 'Comfortaa';
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: border-radius 0.5s;
+    }
+    #heading:hover{
+        border-radius: 10px;
+    }
+    #nav-btn-container{
+        margin: auto;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-btn{
+        border-radius: 15px;
+        background-color: rgba(10, 10, 30, 0.75);
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        color: white;
+        top: 50%;
+        height: 40%;
+        width: 130px;
+        border: none;
+        font-family: 'Comfortaa';
+        margin-left: 5px;
+        margin: auto;
+
+        transition: border-radius 0.5s, height 0.5s, background-color .5s, color .5s;
+    }
+    .nav-btn:hover{
+        background-color: rgba(255, 255, 255, 0.75);
+        color: black;
+        border-radius: 10px;
+    }
+    .nav-btn.active{
+        height: 50px;
+        width: 150px;
+        background-color: rgba(255, 255, 255, 0.75);
+        color: black;
+        border-radius: 25px;
+    }
+    .nav-btn.active:hover{
+        border-radius: 15px;
+    }
+    .nav-content{
+        display: none;
+        animation: fadeEffect .5s;
+    }
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .form{
+        background-color: rgba(10, 10, 30, 0.75);
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        border-radius: 50px;
+        height: 95%;
+        width: 100%;
+        border: none;
+        font-family: 'Comfortaa';
+        margin-top: 10px;
+        margin-left: 5px;
+        margin: auto;
+
+        transition: border-radius .5s, height .5s, width .5s;
+    }
+    .form:hover{
+        border-radius: 20px;
+    }
+    .form.content, .form.contact{
+    }
+
+    .form.slideshow{
+        background-size: cover;
+        background-position: center;
+        height: 85%;
+        width: 93%;
+
+        animation: changesshow 10s infinite;
+
+        transition: border-radius .5s;
+    }
+    .slideshow:hover{
+        border-radius: 20px;
+    }
+    @keyframes changesshow {
+        0%   {background-image: url('ss1.jpg');}
+        33%  {background-image: url('ss2.jpg');}
+        66%  {background-image: url('ss3.jpg');}
+        100%  {background-image: url('ss4.jpg');}
+    }
+
+    #Home, #Skls {
+        height: 100%;
+    }
+
+    ::-webkit-scrollbar{
+        background-color: transparent;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(235, 235, 245, 0.5);
+        border-radius: 10px;
+        height: 50%;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-button{
+        background-color: transparent;
+        height: 1px;
+    }
+
+    ::-webkit-scrollbar-corner{
+        background-color: transparent;
+    }
+
+    .form.skills, .form.educations{
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0); 
+        height: 85%;
+        width: 95%;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        overflow: scroll;
+    }
+
+    .form.skill, .form.education{
+        border-radius: 0px;
+        background-color: transparent;
+        height: 50%;
+        float: left;
+        width: 33%;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0);
+        backdrop-filter: blur(0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        overflow: visible;
+
+    }
+    
+    .itemimg{
+        top: 0%;
+        left: 0%;
+        height: 80%;
+        width: 80%;
+        margin: auto; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 10px rgba(10, 10, 30, 0.75));
+
+        transition: background-position .5s, height .5s, width .5s;
+    }
+
+    #skill1 .itemimg{
+        background-image: url("unity.png");
+    }
+
+    #skill2 .itemimg{
+        background-image: url("html.png");
+    }
+
+    #skill3 .itemimg{
+        background-image: url("css.png");
+    }
+
+    #skill4 .itemimg{
+        background-image: url("js.png");
+    }
+
+    #skill5 .itemimg{
+        background-image: url("cs.png");
+    }
+
+    #education1 .itemimg{
+        background-image: url("educators.png");
+    }
+
+    #education2 .itemimg{
+        background-image: url("aps.png");
+    }
+    
+    .form.skill:hover .itemimg{
+        background-position: left;
+        width: 35%;
+    }
+
+    .form.education:hover .itemimg{
+        background-position: left;
+        width: 35%;
+    }
+
+    .iteminf{
+        height: 0px;
+        width: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: width .5s, height .5s;
+    }
+
+    .form.skill:hover .iteminf{
+        height: 0px;
+        width: 50%;
+    }
+
+    .itemlevel{
+        height: 0px;
+        width: 0px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        
+        transition: width .5s, height .5s, padding-bottom .5s, padding-top .5s, background-image 5s;
+    }
+    
+    .form.skill:hover .itemlevel{
+        padding-top: 45%;
+        padding-bottom: 45%;
+        width: 90%;
+    }
+    
+    #skill1 .itemlevel{
+        background-image: conic-gradient(grey 0deg, #333 150deg, black 300deg, white 301deg, white 360deg);
+    }
+    #skill2 .itemlevel{
+        background-image: conic-gradient(orange 0deg, orangered 300deg, white 301deg, white 360deg);
+    }
+    #skill3 .itemlevel{
+        background-image: conic-gradient(cyan 0deg, blue 300deg, white 301deg, white 360deg);
+    }
+    #skill4 .itemlevel{
+        background-image: conic-gradient(yellow 0deg, orange 300deg, white 301deg, white 360deg);
+    }
+    #skill5 .itemlevel{
+        background-image: conic-gradient(violet 0deg, purple 150deg, indigo 300deg, white 301deg, white 360deg);
+    }
+
+    .itemcover{
+        height: 0px;
+        width: 0px;
+        border-radius: 100px;
+        position: absolute;
+        background: rgba(245, 245, 245, 1);
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+
+        transition: width .5s, height .5s, padding-top .5s, padding-bottom .5s;
+    }
+
+    #skill1 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: black;
+    }
+    
+    #skill2 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: orangered;
+    }
+    
+    #skill3 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: blue;
+    }
+    
+    #skill4 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: orange;
+    }
+    
+    #skill5 .itemcover{
+        background-color: rgba(255, 255, 255, 0.95);
+        color: purple;
+    }
+
+    .form.skill:hover .itemcover{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        width: 40%;
+    }
+
+    .itemtext{
+        font-size: 0px;
+        text-align: center;
+
+        transition: font-size .5s;
+    }
+
+    .form.skill:hover .itemtext{
+        font-size: 24px;
+    }
+    
+    #header{
+        height: 10%;
+        position: relative;
+        overflow: hidden;
+    }
+    #main{
+        margin:auto;
+        position: relative;
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #contact{
+        width: 20%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+    }
+    #content{
+        width: 75%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+    }
+    #footer{
+        height: 7.5%;
+        position: relative;
+    }
+    html{
+        background: url("mbg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<script>
+    function openContent(evt, contentName) {
+        var i, navcontent, navbtn;
+
+        navcontent = document.getElementsByClassName("nav-content");
+        for (i = 0; i < navcontent.length; i++) {
+            navcontent[i].style.display = "none";
+        }
+
+        navbtn = document.getElementsByClassName("nav-btn");
+        for (i = 0; i < navbtn.length; i++) {
+            navbtn[i].className = navbtn[i].className.replace(" active", "");
+        }
+
+        document.getElementById(contentName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        document.getElementById('btn-press-sound2').play();
+    }
+
+    document.getElementById("homeBtn").click();
+</script>
+</html>
