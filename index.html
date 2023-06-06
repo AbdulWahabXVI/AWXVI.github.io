@@ -20,9 +20,9 @@
                     <button class="nav-btn active" onclick="openContent(event, 'Home')" 
                     onpointerover="document.getElementById('btn-press-sound').play();"
                     id="homeBtn">Home</button>
-                    <button class="nav-btn" onclick="openContent(event, 'Exps')" 
+                    <!--<button class="nav-btn" onclick="openContent(event, 'Exps')" 
                     onpointerover="document.getElementById('btn-press-sound').play();"
-                    >Experience</button>
+                    >Experiences</button>-->
                     <button class="nav-btn" onclick="openContent(event, 'Skls')" 
                     onpointerover="document.getElementById('btn-press-sound').play();"
                     >Skills</button>
@@ -46,10 +46,10 @@
 
                         </div>
                     </div>
-                    <div id="Edct" class="nav-content">
+                    <div id="Exps" class="nav-content">
                         <br>
                         <div id="heading">
-                            Education
+                            Experiences
                         </div>
                         <br>
                     </div>
@@ -65,7 +65,7 @@
                                     <div class="itemlevel">
                                         <div class="itemcover">
                                             <div class="itemtext">
-                                                83%
+                                                80%
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                                     <div class="itemlevel">
                                         <div class="itemcover">
                                             <div class="itemtext">
-                                                83%
+                                                90%
                                             </div>
                                         </div>
                                     </div>
@@ -89,7 +89,7 @@
                                     <div class="itemlevel">
                                         <div class="itemcover">
                                             <div class="itemtext">
-                                                83%
+                                                85%
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@
                                     <div class="itemlevel">
                                         <div class="itemcover">
                                             <div class="itemtext">
-                                                83%
+                                                70%
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@
                                     <div class="itemlevel">
                                         <div class="itemcover">
                                             <div class="itemtext">
-                                                83%
+                                                80%
                                             </div>
                                         </div>
                                     </div>
@@ -121,10 +121,10 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Exps" class="nav-content">
+                    <div id="Edct" class="nav-content">
                         <br>
                         <div id="heading">
-                            Experience
+                            Education
                         </div>
                         <br>
                         <div class="form experiences">
@@ -133,10 +133,14 @@
                                 <div class="iteminf">
                                     <div class="itembg">
                                         <div class="itemfg">
-                                            2016-21
+                                            2020-22
                                         </div>
                                         <div class="itemtext">
-                                            Educators
+                                            <br>
+                                            <h2 id="certificate">Matriculation</h3>
+                                            <h4 id="center">The Educators</h4>
+                                            <h6 id="campus">High School</h6>
+                                            <br>
                                         </div>
                                     </div>
                                 </div>
@@ -149,31 +153,11 @@
                                             2022-24
                                         </div>
                                         <div class="itemtext">
-                                            APS
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form experience" id="education1" onmouseenter="document.getElementById('btn-press-sound').play();">
-                                <div class="itemimg"></div>
-                                <div class="iteminf">
-                                    <div class="itembg">
-                                        <div class="itemfg">
-                                        </div>
-                                        <div class="itemtext">
-                                            Educators
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form experience" id="education2" onmouseenter="document.getElementById('btn-press-sound').play();">
-                                <div class="itemimg"></div>
-                                <div class="iteminf">
-                                    <div class="itembg">
-                                        <div class="itemfg">
-                                        </div>
-                                        <div class="itemtext">
-                                            APS
+                                            <br>
+                                            <h2 id="certificate">Intermediate in Computer Science</h2>
+                                            <h4 id="center">Army Public Schools And Colleges</h4>
+                                            <h6 id="campus">College</h6>
+                                            <br>
                                         </div>
                                     </div>
                                 </div>
@@ -207,6 +191,9 @@
         padding: 0;
         margin: 0;
         font-family: 'Comfortaa';
+        min-height: 300px;
+        min-width: 600px;
+        overflow: overlay;
     }
 
     html{
@@ -284,7 +271,7 @@
     #heading{
         border-radius: 15px;
         background-color: rgba(10, 10, 30, 0.75);
-        box-shadow: 0px 0px 20px rgba(10, 10, 20, 1);
+        box-shadow: 0px 0px 20px rgba(10, 10, 30, 1);
         color: white;
         height: 5%;
         width: fit-content;
@@ -309,6 +296,8 @@
     #nav-btn-container{
         height: 100%;
         width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
         display: flex;
         align-items: center;
     }
@@ -316,7 +305,7 @@
     .nav-btn{
         border-radius: 15px;
         background-color: rgba(10, 10, 30, 0.75);
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 1);
         color: white;
         top: 50%;
         height: 40%;
@@ -336,7 +325,7 @@
         border-radius: 10px;
     }
     .nav-btn.active{
-        height: 50px;
+        height: 50%;
         width: 150px;
         background-color: rgba(255, 255, 255, 0.75);
         color: black;
@@ -374,24 +363,29 @@
     }
 
     .form.content{
-        height: 85%;
+        height: 88%;
         width: auto;
         margin-right: 10px;
         margin-left: 10px;
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
     .form.contact{
-        height: 85%;
+        height: 88%;
         width: auto;
-        
         margin-right: 10px;
         margin-left: 10px;
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
 
     .form.slideshow{
         background-size: cover;
         background-position: center;
-        height: 85%;
-        width: 93%;
+        height: 80%;
+        width: 90%;
 
         animation: changesshow 10s infinite;
 
@@ -501,19 +495,19 @@
     }
     
     #skill1 .itemlevel{
-        background-image: conic-gradient(grey 0deg, #333 150deg, black 300deg, white 301deg, white 360deg);
+        background-image: conic-gradient(grey 0deg, #333 150deg, black 288deg, white 289deg, white 360deg);
     }
     #skill2 .itemlevel{
-        background-image: conic-gradient(orange 0deg, orangered 300deg, white 301deg, white 360deg);
+        background-image: conic-gradient(orange 0deg, orangered 324deg, white 325deg, white 360deg);
     }
     #skill3 .itemlevel{
-        background-image: conic-gradient(cyan 0deg, blue 300deg, white 301deg, white 360deg);
+        background-image: conic-gradient(cyan 0deg, blue 306deg, white 307deg, white 360deg);
     }
     #skill4 .itemlevel{
-        background-image: conic-gradient(yellow 0deg, orange 300deg, white 301deg, white 360deg);
+        background-image: conic-gradient(yellow 0deg, orange 252deg, white 253deg, white 360deg);
     }
     #skill5 .itemlevel{
-        background-image: conic-gradient(violet 0deg, purple 150deg, indigo 300deg, white 301deg, white 360deg);
+        background-image: conic-gradient(violet 0deg, purple 150deg, indigo 288deg, white 289deg, white 360deg);
     }
 
     .form.skill .itemcover{
@@ -560,13 +554,14 @@
     .form.skill .itemtext{
         font-size: 0px;
         text-align: center;
-
+        
         transition: font-size .5s;
     }
     .form.skill:hover .itemtext{
         font-size: 24px;
+        text-shadow: rgba(10, 10, 30, 1);
     }
-
+    
     .form.experiences{
         border-radius: 0px;
         background-color: transparent;
@@ -639,12 +634,11 @@
         height: 0px;
         width: 0px;
         border-radius: 50px;
-        background: rgba(245, 245, 245, 1);
+        background-color: transparent;
         font-size: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
         
         transition: width .5s, height .5s, padding-bottom .5s, padding-top .5s, background-image 5s;
     }
@@ -657,15 +651,16 @@
     .form.experience .itemfg{
         position: absolute;
         
+        color: white;
         height: 0px;
         width: 0px;
         font-size: 0px;
         border-radius: 15px;
-        background: rgba(245, 245, 245, 1);
+        background: rgba(10, 10, 30, 0.75);
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 10px rgba(10, 10, 30, 0.75);
+        box-shadow: 0px 0px 10px rgba(10, 10, 30, 1);
 
         transition: width .5s, height .5s, padding-top .5s, padding-bottom .5s;
     }
@@ -673,23 +668,35 @@
         top: 7%;
         right: 5%;
         font-size: 24px;
-        border-radius: 10px;
+        border-radius: 15px;
         height: 10%;
         width: fit-content;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
 
     .form.experience .itemtext{
         font-size: 0px;
-        text-align: center;
-
+        color: white;
+        text-align: right;
+        padding-right: 12%;
+        
         transition: font-size .5s;
     }
     .form.experience:hover .itemtext{
         font-size: 24px;
+    }
+    
+    .form.experience .itemtext #certificate, .form.experience .itemtext #center, .form.experience .itemtext #campus{
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        width: fit-content;
+        text-shadow: 0px 0px 20px rgba(10, 10, 30, 1);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     ::-webkit-scrollbar{
@@ -710,7 +717,7 @@
     }
 
     ::-webkit-scrollbar-track{
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     ::-webkit-scrollbar-button{
@@ -719,6 +726,10 @@
     }
 
     ::-webkit-scrollbar-corner{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-track-piece{
         background-color: transparent;
     }
 </style>
